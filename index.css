@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: gray;
 }
 
 .slider {
@@ -48,7 +48,7 @@ object-fit: cover;
     background-color: #aaa;
 }
 .ready-section {
-    background-image:url(../img/maidan.jpg);
+    background-image: url(../img/maidan.jpg);
     background-position: center;
     background-size: cover;
     min-width: 400px;
