@@ -11,9 +11,7 @@ body {
 }
 .item {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
 }
 .slider .item img {
 object-fit: cover;
