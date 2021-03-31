@@ -10,20 +10,20 @@ body {
     margin-bottom: 15px;
 }
 .item {
-    display: flex;
-    
+    display: flex;   
+}
+.hide {
+    display: none;
 }
 .slider .item img {
 object-fit: cover;
     width: 50%;
-    height: 100%;
     border: none;
     box-shadow: none;
 }
 .slideText {
 object-fit: cover;
     width: 50%;
-    height: 100%;
     border: none;
     box-shadow: none;
     background-color: white;
@@ -80,5 +80,4 @@ object-fit: cover;
     background-color: orange;
     cursor: pointer;
 }
-
 
