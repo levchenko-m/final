@@ -11,16 +11,17 @@
 <body>
     <h1 style="color: green;">Final Tomorrow</h1>
 
-    <!--Mariana's Section-->
-    <div class="slider" >
+    <!--Mariana's Section Page1-->
+    <section class="slider">
         <div class="item">
             <img src="img/carousel-img1.jpg" alt="Customer1">
             <div class="slideText" style="text-align:center;color:black;">
-                  <h2>Our customers say</h2>
-                <p>....</p>
-                            <p>I was happy to travel with U Tours. Best guides ever. Trip was perfectly organized.</p>
-                            <h3>Ahmed Helmy</h3>
-                            <h5>Egypt</h5>
+                  <h2 class="customer-heading">Our customers say</h2>
+                <div class="customer-dots">....</div>
+                            <p class="customer-text">I was happy to travel with U Tours. Best guides ever.
+                    Trip was perfectly organized.</p>
+                            <h3 class="customer-name">Ahmed Helmy</h3>
+                            <h5 class="customer-country">Egypt</h5>
 
                 <div class="slider-dots">
                     <span class="slider-dots_item" onclick="currentxSlide(1)"></span>
@@ -33,72 +34,88 @@
         <div class="item">
             <img src="img/carousel-img2.jpg" alt="Customer2">
             <div class="slideText" style="text-align:center;color:black;">
-                 <h2>Our customers say</h2>
-                <p>....</p>
-                            <p>My tour included Kyiv, Chornobyl, Lviv and Carpathian mountains. Absolutely stunning! U Tour is a great travel agency.</p>
-                            <h3>Geff Gordons</h3>
-                            <h5>UK</h5>
+                 <h2 class="customer-heading">Our customers say</h2>
+                <div class="customer-dots">....</div>
+                            <p class="customer-text">My tour included Kyiv, Chornobyl, Lviv and Carpathian mountains.
+                    Absolutely stunning!
+                    <br>U Tours is a great travel agency.</p>
+                            <h3 class="customer-name">Geff Gordons</h3>
+                            <h5 class="customer-country">UK</h5>
                 <div class="slider-dots">
                     <span class="slider-dots_item" onclick="currentxSlide(1)"></span>
                     <span class="slider-dots_item" onclick="currentxSlide(2)"></span>
                     <span class="slider-dots_item" onclick="currentxSlide(3)"></span>
-
                 </div>
-
             </div>
         </div>
         <div class="item">
             <img src="img/carousel-img3.jpg" alt="Customer3">
             <div class="slideText" style="text-align:center;color:black;">
-                   <h2>Our customers say</h2>
-                <p>....</p>
-                            <p>U Tours is a reliable company that provides exlusive tours for their clients.<br>
-                     Thanks a lot for a great experience in Ukraine</p>
-                            <h3>Elisabeth Smith</h3>
-                            <h5>Canada</h5>
+                   <h2 class="customer-heading">Our customers say</h2>
+                <div class="customer-dots">....</div>
+                            <p class="customer-text">U Tours is a reliable company that provides exlusive tours
+                    for their clients.<br>
+                    Thanks a lot for a great experience in Ukraine.</p>
+                            <h3 class="customer-name">Elisabeth Smith</h3>
+                            <h5 class="customer-country">Canada</h5>
                 <div class="slider-dots">
                     <span class="slider-dots_item" onclick="currentxSlide(1)"></span>
                     <span class="slider-dots_item" onclick="currentxSlide(2)"></span>
                     <span class="slider-dots_item" onclick="currentxSlide(3)"></span>
-
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <div class="ready-section">
+    </section>
+    <section class="ready-section">
         <div class="ready-section-text">
-<h2 >Ready to Go to Ukraine?</h2>
-<p>....</p>
-        <p>Press the button and get the individual offer with the best price on the selected tour!</p>
-        <div class="button-ready-section">
-                    <a href="#contacts" class="button-ready">REQUEST A QUOTE</a>
-                </div>
- </div>
-    </div>
-
-
-
-
-
-
-
-      <!--Mariana's block start-->
-    <footer>
-            <!-- Form Section... To fix image and form-block-->
-            <img class="form-image" width="600" src="img/odesa.jpg" alt="Odesa Oprera Theatre">
-            <div id="form-text-block">
-                <h2 class="form-heading">Let's Travel!</h2>
-                <p class="form-text">Hurry up and enjoy the tour<br>
-                    around the most spectacular places in Ukraine!</p>
-                <form action="https://formspree.io/f/xxybrkqv" method="POST">
-                    <input class="form-input" name="name" type="text" placeholder="Name" required><br>
-                    <input class="form-input" name="phone-number" type="text" placeholder="Phone number" required><br>
-                    <input class="form-input" name="email" type="text" placeholder="Email" required><br>
-                    <button id="form-button" class="button" type="submit">Send</button>
-                </form>
+            <h2 class="customer-heading">Ready to Go to Ukraine?</h2>
+            <div class="customer-dots">....</div>
+                    <p class="customer-text">
+                Press the button and get the individual offer with the best price on the selected tour!</p>
+                    <div class="button-ready-section">
+                <a href="#contacts" class="button-ready">REQUEST A QUOTE</a>
             </div>
+        </div>
+    </section>
+    <!--Mariana's Section End Page1-->
+
+
+
+
+
+
+
+    <!--Mariana's Section Page2-->
+    <footer>
+        <!-- Form Section... To fix image and form-block-->
+        <section class="travel-form">
+            <img class="travel-image" width="600" src="img/odesa.jpg" alt="Odesa Oprera Theatre">
+            <div id="lets-travel">
+                <h2 class="customer-heading-travel">Let's Travel!</h2>
+                <div class="customer-dots-travel">....</div>
+                <p class="customer-text-travel">Hurry up and enjoy the tour
+                    around the most spectacular places in Ukraine!</p>
+                <!--Add Form-->
+                <div class="customers-form">
+                    <form id="fcustform" class="formadd" method="POST" action="https://formspree.io/f/xxybrkqv">
+                        <div class="customers-control">
+                            <input type="text" id="name" placeholder="Name" />
+                            <small>Error message</small>
+                        </div>
+                        <div class="customers-control">
+                            <input type="text" id="phonenumber" placeholder="Phone number" />
+                            <small>Error message</small>
+                        </div>
+                        <div class="customers-control">
+                            <input type="text" id="email" placeholder="Email" />
+                            <small>Error message</small>
+                        </div>
+                        <div class="customers-button">
+                            <button type="submit">SEND</button>
+                        </div>
+                    </form>
+                </div>
+                <!--Add Form-->
         </section>
         <!--Footer Section To fix links and layout...hover for insta?-->
         <section class="footer-section">
@@ -106,9 +123,9 @@
             <ul class="footer-block">
                 <li><a href="#our-tours">Our Tours</li>
                 <li><a href="#services">Services</li>
-                    <li><a href="#reviews">Reviews</li>
-                        <li><a href="#about-us">About Us</li>
-                            <li><a href="#contacts">Contacts</li>
+                <li><a href="#reviews">Reviews</li>
+                <li><a href="#about-us">About Us</li>
+                <li><a href="#contacts">Contacts</li>
             </ul>
             <div>
                 <h3 id="follow-media">Follow Us</h3>
@@ -122,7 +139,7 @@
             </div>
         </section>
     </footer>
-    <!--Mariana's block end-->
+    <!--Mariana's Section End Page2-->
 
 
 
